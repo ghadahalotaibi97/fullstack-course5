@@ -1,9 +1,10 @@
 <div class="loader">
-    <ul>
-        <li ng-repeat="item in foundItems">
-            {{ item.name }}, {{ item.short_name }}, {{ item.description }}
-            <button class="btn btn-danger" ng-click="onRemove({ index: $index })">Don't want this one!</button>
-        </li>
-    </ul>
-    <div ng-if="foundItems.length === 0">Nothing found</div>
+  <div>
+  <ul>
+    <li ng-repeat="item in foundItems">
+      {{ item.name }}, {{ item.short_name }}, {{ item.description }}
+      <button class="btn btn-danger" ng-click="onRemove({ index: $index })">Don't want this one!</button>
+    </li>
+  </ul>
+  <div ng-if="foundItems.length === 0">Nothing found</div>
 </div>
