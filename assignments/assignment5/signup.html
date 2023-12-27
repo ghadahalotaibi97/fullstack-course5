@@ -1,0 +1,13 @@
+<!-- signup.html -->
+<form name="signupForm" ng-submit="submitForm()">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" ng-model="user.firstName" required>
+
+  <!-- Repeat similar structure for other fields -->
+
+  <label for="favoriteMenu">Favorite Menu Number:</label>
+  <input type="text" id="favoriteMenu" name="favoriteMenu" ng-model="user.favoriteMenu" required>
+
+  <button type="submit" ng-disabled="signupForm.$invalid">Submit</button>
+</form>
+<p ng-show="showResultMessage">{{ resultMessage }}</p>
