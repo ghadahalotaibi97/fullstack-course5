@@ -28,7 +28,7 @@
 
   function FoundItemsDirective() {
     var ddo = {
-      templateUrl: 'loader/itemsloaderindicator.template.html',
+      templateUrl: 'itemsloaderindicator.template.html',
       scope: {
         foundItems: '<',
         onRemove: '&'
